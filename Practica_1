@@ -1,0 +1,30 @@
+Pràctica 1 - M08
+
+1-
+
+[root@i19 ~]# ip addr add 172.16.0.19/16 dev enp5s0
+
+[root@i19 ~]# ping 172.16.0.20
+PING 172.16.0.20 (172.16.0.20) 56(84) bytes of data.
+64 bytes from 172.16.0.20: icmp_seq=1 ttl=64 time=0.176 ms
+
+2-
+
+[root@i19 ~]# arp -a
+
+[root@i19 ~]# ping 172.16.0.20
+PING 172.16.0.20 (172.16.0.20) 56(84) bytes of data.
+64 bytes from 172.16.0.20: icmp_seq=1 ttl=64 time=0.176 ms
+
+3-
+
+[root@i19 ~]# ip link set enp5s0 down
+[root@i19 ~]# ip link set name MiRed enp5s0
+[root@i19 ~]# ip link set MiRed up
+
+4-
+
+http://rpm.pbone.net/index.php3/stat/4/idpl/21781899/dir/fedora_18/com/netperf-2.6.0-9.1.x86_64.rpm.html
+
+
+
